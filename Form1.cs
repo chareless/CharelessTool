@@ -90,5 +90,40 @@ namespace CharelessTool
                 MessageBox.Show("Güncel Sürüm Bulunurken Hata!", "Uyarý", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void buttonDigitalDiary_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonRandomTools_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonOrtalama_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonTombala_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonBackpack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonInsta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEarthquake_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

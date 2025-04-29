@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Chareless Tool programı; geliştirmiş olduğum Dijital Günlük, Rastgele Araçlar, Ortalama Hesaplama, E-Tombala, Sırt Çantası Problemi Yazılımı, Insta-Followers, Earthquake Monitor uygulamalarının tek bir uygulama üzerinden çalıştırılmasını sağlamaktadır.</value>
+  </data>
 </root>
