@@ -50,7 +50,7 @@ namespace CharelessTool
                 string html = client.DownloadString(url);
                 HtmlAgilityPack.HtmlDocument dokuman = new HtmlAgilityPack.HtmlDocument();
                 dokuman.LoadHtml(html);
-                HtmlNodeCollection titles = dokuman.DocumentNode.SelectNodes("/html/body/div/div/div[2]/div/div/div/div/div[2]/div[2]/div/div/p[5]/h7");
+                HtmlNodeCollection titles = dokuman.DocumentNode.SelectNodes("/html/body/div/div/div[2]/div/div/div/div/div[2]/div[2]/div/div/p[2]/h7");
                 string version = "";
                 foreach (HtmlNode title in titles)
                 {
@@ -93,37 +93,172 @@ namespace CharelessTool
 
         private void buttonDigitalDiary_Click(object sender, EventArgs e)
         {
+            string filePath = System.IO.Path.Combine(Application.StartupPath, "DigitalDiary", "Digital Diary.exe");
 
+            if (System.IO.File.Exists(filePath))
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                {
+                    FileName = filePath,
+                    UseShellExecute = true
+                });
+            }
+            else
+            {
+                MessageBox.Show("Uygulama bulunamadý: " + filePath);
+            }
         }
+
 
         private void buttonRandomTools_Click(object sender, EventArgs e)
         {
+            string filePath = System.IO.Path.Combine(Application.StartupPath, "RandomTools", "RandomTools.exe");
 
+            if (System.IO.File.Exists(filePath))
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                {
+                    FileName = filePath,
+                    UseShellExecute = true
+                });
+            }
+            else
+            {
+                MessageBox.Show("Uygulama bulunamadý: " + filePath);
+            }
         }
+
 
         private void buttonOrtalama_Click(object sender, EventArgs e)
         {
+            string filePath = System.IO.Path.Combine(Application.StartupPath, "Ortalama-Excel", "Ortalama.xlsx");
 
+            if (System.IO.File.Exists(filePath))
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                {
+                    FileName = filePath,
+                    UseShellExecute = true // Excel ile açýlmasýný saðlar
+                });
+            }
+            else
+            {
+                MessageBox.Show("Dosya bulunamadý: " + filePath);
+            }
         }
+
 
         private void buttonTombala_Click(object sender, EventArgs e)
         {
+            string filePath = System.IO.Path.Combine(Application.StartupPath, "E-Tombala", "Tombala.exe");
 
+            if (System.IO.File.Exists(filePath))
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                {
+                    FileName = filePath,
+                    UseShellExecute = true
+                });
+            }
+            else
+            {
+                MessageBox.Show("Uygulama bulunamadý: " + filePath);
+            }
         }
+
 
         private void buttonBackpack_Click(object sender, EventArgs e)
         {
+            string filePath = System.IO.Path.Combine(Application.StartupPath, "Knapsack", "Opti.exe");
 
+            if (System.IO.File.Exists(filePath))
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                {
+                    FileName = filePath,
+                    UseShellExecute = true
+                });
+            }
+            else
+            {
+                MessageBox.Show("Uygulama bulunamadý: " + filePath);
+            }
         }
+
 
         private void buttonInsta_Click(object sender, EventArgs e)
         {
+            string filePath = System.IO.Path.Combine(Application.StartupPath, "Insta-Followers", "Insta Followers Desktop", "Insta-Followers.exe");
 
+            if (System.IO.File.Exists(filePath))
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                {
+                    FileName = filePath,
+                    UseShellExecute = true
+                });
+            }
+            else
+            {
+                MessageBox.Show("Uygulama bulunamadý: " + filePath);
+            }
         }
+
+        private void buttonInstaConsole_Click(object sender, EventArgs e)
+        {
+            string filePath = System.IO.Path.Combine(Application.StartupPath, "Insta-Followers", "Insta Followers Console", "InstagramFollowersControl.exe");
+
+            if (System.IO.File.Exists(filePath))
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                {
+                    FileName = filePath,
+                    UseShellExecute = true
+                });
+            }
+            else
+            {
+                MessageBox.Show("Uygulama bulunamadý: " + filePath);
+            }
+        }
+
 
         private void buttonEarthquake_Click(object sender, EventArgs e)
         {
+            string filePath = System.IO.Path.Combine(Application.StartupPath, "Earthquake Monitor", "APP", "EarthquakeDataFormsApp.exe");
 
+            if (System.IO.File.Exists(filePath))
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                {
+                    FileName = filePath,
+                    UseShellExecute = true
+                });
+            }
+            else
+            {
+                MessageBox.Show("Uygulama bulunamadý: " + filePath);
+            }
         }
+
+
+        private void buttonEarthquakeConsole_Click(object sender, EventArgs e)
+        {
+            string filePath = System.IO.Path.Combine(Application.StartupPath, "Earthquake Monitor", "Console", "EarthquakeData.exe");
+
+            if (System.IO.File.Exists(filePath))
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
+                {
+                    FileName = filePath,
+                    UseShellExecute = true
+                });
+            }
+            else
+            {
+                MessageBox.Show("Uygulama bulunamadý: " + filePath);
+            }
+        }
+
     }
 }

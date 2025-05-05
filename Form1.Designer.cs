@@ -36,10 +36,12 @@
             buttonDigitalDiary = new Button();
             buttonRandomTools = new Button();
             buttonOrtalama = new Button();
-            buttonInsta = new Button();
+            buttonInstaApp = new Button();
             buttonBackpack = new Button();
             buttonTombala = new Button();
-            buttonEarthquake = new Button();
+            buttonEarthquakeApp = new Button();
+            buttonEarthquakeConsole = new Button();
+            buttonInstaConsole = new Button();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -121,18 +123,18 @@
             buttonOrtalama.UseVisualStyleBackColor = true;
             buttonOrtalama.Click += buttonOrtalama_Click;
             // 
-            // buttonInsta
+            // buttonInstaApp
             // 
-            buttonInsta.BackColor = Color.Teal;
-            buttonInsta.FlatStyle = FlatStyle.Flat;
-            buttonInsta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            buttonInsta.Location = new Point(550, 180);
-            buttonInsta.Name = "buttonInsta";
-            buttonInsta.Size = new Size(200, 50);
-            buttonInsta.TabIndex = 6;
-            buttonInsta.Text = "Insta-Followers";
-            buttonInsta.UseVisualStyleBackColor = true;
-            buttonInsta.Click += buttonInsta_Click;
+            buttonInstaApp.BackColor = Color.Teal;
+            buttonInstaApp.FlatStyle = FlatStyle.Flat;
+            buttonInstaApp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            buttonInstaApp.Location = new Point(550, 180);
+            buttonInstaApp.Name = "buttonInstaApp";
+            buttonInstaApp.Size = new Size(200, 50);
+            buttonInstaApp.TabIndex = 6;
+            buttonInstaApp.Text = "Insta-Followers App";
+            buttonInstaApp.UseVisualStyleBackColor = true;
+            buttonInstaApp.Click += buttonInsta_Click;
             // 
             // buttonBackpack
             // 
@@ -160,18 +162,44 @@
             buttonTombala.UseVisualStyleBackColor = true;
             buttonTombala.Click += buttonTombala_Click;
             // 
-            // buttonEarthquake
+            // buttonEarthquakeApp
             // 
-            buttonEarthquake.BackColor = Color.Teal;
-            buttonEarthquake.FlatStyle = FlatStyle.Flat;
-            buttonEarthquake.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            buttonEarthquake.Location = new Point(50, 260);
-            buttonEarthquake.Name = "buttonEarthquake";
-            buttonEarthquake.Size = new Size(200, 50);
-            buttonEarthquake.TabIndex = 7;
-            buttonEarthquake.Text = "Earthquake Monitor";
-            buttonEarthquake.UseVisualStyleBackColor = true;
-            buttonEarthquake.Click += buttonEarthquake_Click;
+            buttonEarthquakeApp.BackColor = Color.Teal;
+            buttonEarthquakeApp.FlatStyle = FlatStyle.Flat;
+            buttonEarthquakeApp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            buttonEarthquakeApp.Location = new Point(50, 260);
+            buttonEarthquakeApp.Name = "buttonEarthquakeApp";
+            buttonEarthquakeApp.Size = new Size(200, 50);
+            buttonEarthquakeApp.TabIndex = 7;
+            buttonEarthquakeApp.Text = "Earthquake Monitor App";
+            buttonEarthquakeApp.UseVisualStyleBackColor = true;
+            buttonEarthquakeApp.Click += buttonEarthquake_Click;
+            // 
+            // buttonEarthquakeConsole
+            // 
+            buttonEarthquakeConsole.BackColor = Color.Teal;
+            buttonEarthquakeConsole.FlatStyle = FlatStyle.Flat;
+            buttonEarthquakeConsole.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            buttonEarthquakeConsole.Location = new Point(300, 260);
+            buttonEarthquakeConsole.Name = "buttonEarthquakeConsole";
+            buttonEarthquakeConsole.Size = new Size(200, 50);
+            buttonEarthquakeConsole.TabIndex = 8;
+            buttonEarthquakeConsole.Text = "Earthquake Console";
+            buttonEarthquakeConsole.UseVisualStyleBackColor = true;
+            buttonEarthquakeConsole.Click += buttonEarthquakeConsole_Click;
+            // 
+            // buttonInstaConsole
+            // 
+            buttonInstaConsole.BackColor = Color.Teal;
+            buttonInstaConsole.FlatStyle = FlatStyle.Flat;
+            buttonInstaConsole.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            buttonInstaConsole.Location = new Point(550, 260);
+            buttonInstaConsole.Name = "buttonInstaConsole";
+            buttonInstaConsole.Size = new Size(200, 50);
+            buttonInstaConsole.TabIndex = 9;
+            buttonInstaConsole.Text = "Insta-Followers Console";
+            buttonInstaConsole.UseVisualStyleBackColor = true;
+            buttonInstaConsole.Click += buttonInstaConsole_Click;
             // 
             // Form1
             // 
@@ -179,8 +207,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateGray;
             ClientSize = new Size(800, 407);
-            Controls.Add(buttonEarthquake);
-            Controls.Add(buttonInsta);
+            Controls.Add(buttonInstaConsole);
+            Controls.Add(buttonEarthquakeConsole);
+            Controls.Add(buttonEarthquakeApp);
+            Controls.Add(buttonInstaApp);
             Controls.Add(buttonBackpack);
             Controls.Add(buttonTombala);
             Controls.Add(buttonOrtalama);
@@ -188,8 +218,10 @@
             Controls.Add(buttonDigitalDiary);
             Controls.Add(toolStrip1);
             FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CharelessTool";
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
@@ -206,9 +238,11 @@
         private Button buttonDigitalDiary;
         private Button buttonRandomTools;
         private Button buttonOrtalama;
-        private Button buttonInsta;
+        private Button buttonInstaApp;
         private Button buttonBackpack;
         private Button buttonTombala;
-        private Button buttonEarthquake;
+        private Button buttonEarthquakeApp;
+        private Button buttonEarthquakeConsole;
+        private Button buttonInstaConsole;
     }
 }

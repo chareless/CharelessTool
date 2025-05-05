@@ -37,12 +37,15 @@
             label4 = new Label();
             label5 = new Label();
             richTextBox1 = new RichTextBox();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(0, -1);
             panel1.Name = "panel1";
@@ -125,6 +128,16 @@
             richTextBox1.TabIndex = 6;
             richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(212, 6);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 100);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
             // About
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -138,11 +151,13 @@
             Controls.Add(labelVersion);
             Controls.Add(label2);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "About";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Hakkında";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -157,5 +172,6 @@
         private Label label4;
         private Label label5;
         private RichTextBox richTextBox1;
+        private PictureBox pictureBox1;
     }
 }
